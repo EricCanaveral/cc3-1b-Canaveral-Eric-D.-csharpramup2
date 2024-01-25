@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSharpRampUp
 {
@@ -9,23 +9,23 @@ namespace CSharpRampUp
             Console.Write("weight in pounds: ");
             double pounds = Convert.ToDouble(Console.ReadLine());
             double kilograms = pounds * 0.453592;
-            Console.WriteLine("Weight: {pounds} lbs, Converted to Kilograms: {kilograms} kg");
+            Console.WriteLine($"Weight: {pounds} lbs, Converted to Kilograms: {kilograms} kg");
             Console.Write("distance in miles: ");
             double miles = Convert.ToDouble(Console.ReadLine());
             double kilometers = miles * 1.60934;
-            Console.WriteLine("Distance: {miles} mi, Converted to Kilometers: {kilometers} km");
+            Console.WriteLine($"Distance: {miles} mi, Converted to Kilometers: {kilometers} km");
             Console.Write("temperature in Fahrenheit: ");
             double fahrenheit = Convert.ToDouble(Console.ReadLine());
             double celsius = (fahrenheit - 32) * 5 / 9;
-            Console.WriteLine("Temperature: {fahrenheit} °F, Converted to Celsius: {celsius} °C");
+            Console.WriteLine($"Temperature: {fahrenheit} °F, Converted to Celsius: {celsius} °C");
             int Ages = 0;
             for (int i = 0; i < 10; i++)
             {
-                Console.Write("age of student {i + 1}: ");
+                Console.Write($"age of student {i + 1}: ");
                 Ages += Convert.ToInt32(Console.ReadLine());
             }
             double average = Ages / 10.0;
-            Console.WriteLine("Ages of all students: (List of ages), Average Age: {average}");
+            Console.WriteLine($"Ages of all students: (List of ages), Average Age: {average}");
             string person1 = "Jojo";
             string person2 = "Luna";
             string person3 = "Axel";
@@ -71,7 +71,7 @@ where enchanting flavours and extraordinary dishes perpetually graced their tabl
                     }
                     Console.WriteLine();
                 }
-                Console.WriteLine("Sum of first {n} natural numbers: {n * (n + 1) / 2}");
+                Console.WriteLine($"Sum of first {n} natural numbers: {n * (n + 1) / 2}");
                 Console.WriteLine("Inverted Number Pattern:");
                 for (int i = n; i >= 1; i--)
                 {
